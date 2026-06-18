@@ -1,0 +1,284 @@
+{
+  "mod_elements": [
+    {
+      "name": "Build",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "build",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tabosmprealms/dimension_type/build.json",
+          "src/main/resources/data/tabosmprealms/dimension/build.json",
+          "src/main/java/net/mcreator/tabosmprealms/world/dimension/BuildDimension.java"
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "WorldGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/network/WorldGuiButtonMessage.java",
+          "src/main/java/net/mcreator/tabosmprealms/world/inventory/WorldGuiMenu.java",
+          "src/main/java/net/mcreator/tabosmprealms/client/gui/WorldGuiScreen.java"
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "WorldCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/WorldCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "CommandWorld",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/command/CommandWorldCommand.java"
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "RessourcesGoingButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ressources_going_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/RessourcesGoingButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "NetherGoingButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_going_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/NetherGoingButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "BuildGoingButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "build_going_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/BuildGoingButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mondes"
+    },
+    {
+      "name": "Setmoney",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setmoney",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/command/SetmoneyCommand.java"
+        ]
+      },
+      "path": "~/Economie"
+    },
+    {
+      "name": "Money",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/command/MoneyCommand.java"
+        ]
+      },
+      "path": "~/Economie"
+    },
+    {
+      "name": "MoneyCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/MoneyCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Economie"
+    },
+    {
+      "name": "SetMoneyCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_money_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/SetMoneyCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Economie"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Money",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.tabosmprealms.world_gui.label_changer_de_monde": "Changer de monde"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Sorts",
+        "children": []
+      },
+      {
+        "name": "Economie",
+        "children": []
+      },
+      {
+        "name": "Royaumes",
+        "children": []
+      },
+      {
+        "name": "Metiers",
+        "children": []
+      },
+      {
+        "name": "Classes",
+        "children": []
+      },
+      {
+        "name": "Objets",
+        "children": []
+      },
+      {
+        "name": "TaboLib",
+        "children": []
+      },
+      {
+        "name": "Quetes",
+        "children": []
+      },
+      {
+        "name": "Donjons",
+        "children": []
+      },
+      {
+        "name": "Mondes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tabosmprealms",
+    "modName": "TABOsmp-realms",
+    "version": "1.0.0",
+    "author": "utilisateur, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.tabosmprealms"
+  },
+  "mcreatorVersion": 202400452410
+}
