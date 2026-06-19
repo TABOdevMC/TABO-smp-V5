@@ -1,0 +1,13 @@
+{
+  "item.tabosmprealms.pnj_config_wand": "Pnj Config Wand",
+  "gui.tabosmprealms.shop.tooltip_item2": "\u003cItem\u003e",
+  "gui.tabosmprealms.shop.tooltip_item1": "\u003cItem\u003e",
+  "item.tabosmprealms.shop_pnj_spawn_egg": "Shop Pnj Spawn Egg",
+  "gui.tabosmprealms.shop.label_type": "\u003cType\u003e",
+  "entity.tabosmprealms.shop_pnj": "Shop Pnj",
+  "gui.tabosmprealms.shop.tooltip_item": "\u003citem\u003e",
+  "gui.tabosmprealms.shop.label_prix": "Prix :",
+  "gui.tabosmprealms.shop.label_prix2": "Prix :",
+  "gui.tabosmprealms.shop.label_prix1": "Prix :",
+  "gui.tabosmprealms.world_gui.label_changer_de_monde": "Changer de monde"
+}

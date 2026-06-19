@@ -194,10 +194,185 @@
           {
             "name": "arguments",
             "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
       "path": "~/Economie"
+    },
+    {
+      "name": "ShopPnj",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_pnj",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tabosmprealms/forge/biome_modifier/shop_pnj_biome_modifier.json",
+          "src/main/resources/assets/tabosmprealms/models/item/shop_pnj_spawn_egg.json",
+          "src/main/java/net/mcreator/tabosmprealms/entity/ShopPnjEntity.java",
+          "src/main/java/net/mcreator/tabosmprealms/client/renderer/ShopPnjRenderer.java"
+        ]
+      },
+      "path": "~/Economie/ShopPnjs"
+    },
+    {
+      "name": "StartStuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_stuff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/StartStuffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TaboLib"
+    },
+    {
+      "name": "Kit",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/command/KitCommand.java"
+        ]
+      },
+      "path": "~/TaboLib"
+    },
+    {
+      "name": "OpenShop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_shop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/OpenShopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "Type",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Economie/ShopPnjs"
+    },
+    {
+      "name": "ShopPnjRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_pnj_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/procedures/ShopPnjRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Economie/ShopPnjs"
+    },
+    {
+      "name": "PnjConfigWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pnj_config_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/item/PnjConfigWandItem.java",
+          "src/main/resources/assets/tabosmprealms/models/item/pnj_config_wand.json"
+        ]
+      },
+      "path": "~/Economie/ShopPnjs"
+    },
+    {
+      "name": "Shop",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/client/gui/ShopScreen.java",
+          "src/main/java/net/mcreator/tabosmprealms/world/inventory/ShopMenu.java"
+        ]
+      },
+      "path": "~/Economie/ShopPnjs"
+    },
+    {
+      "name": "ShopConfig",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tabosmprealms/configuration/ShopConfigConfiguration.java"
+        ]
+      },
+      "path": "~/Economie/ShopPnjs"
     }
   ],
   "variable_elements": [
@@ -206,6 +381,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "NeverConnected",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "LastPnjClicked",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -217,6 +404,16 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.tabosmprealms.pnj_config_wand": "Pnj Config Wand",
+      "gui.tabosmprealms.shop.tooltip_item2": "\u003cItem\u003e",
+      "gui.tabosmprealms.shop.tooltip_item1": "\u003cItem\u003e",
+      "item.tabosmprealms.shop_pnj_spawn_egg": "Shop Pnj Spawn Egg",
+      "gui.tabosmprealms.shop.label_type": "\u003cType\u003e",
+      "entity.tabosmprealms.shop_pnj": "Shop Pnj",
+      "gui.tabosmprealms.shop.tooltip_item": "\u003citem\u003e",
+      "gui.tabosmprealms.shop.label_prix": "Prix :",
+      "gui.tabosmprealms.shop.label_prix2": "Prix :",
+      "gui.tabosmprealms.shop.label_prix1": "Prix :",
       "gui.tabosmprealms.world_gui.label_changer_de_monde": "Changer de monde"
     }
   },
@@ -229,7 +426,12 @@
       },
       {
         "name": "Economie",
-        "children": []
+        "children": [
+          {
+            "name": "ShopPnjs",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Royaumes",

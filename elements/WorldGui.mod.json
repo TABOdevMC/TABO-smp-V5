@@ -1,0 +1,80 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ressources_world_button",
+          "image": "ressources_world_button.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RessourcesGoingButton"
+          },
+          "x": 147,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_changer_de_monde",
+          "text": {
+            "fixedValue": "Changer de monde"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nether_button",
+          "image": "nether_button.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "NetherGoingButton"
+          },
+          "x": 236,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_build_world_button",
+          "image": "build_world_button.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BuildGoingButton"
+          },
+          "x": 195,
+          "y": 141,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
