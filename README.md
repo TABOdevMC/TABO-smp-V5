@@ -2,8 +2,12 @@
 Le code et wiki du TABO smp v5
 
 ## Infos principales
-Minecraft Version : Java 1.20.1
+Minecraft Version : Java 1.21.1
+
 Loader : Forge
+
 [IP du serveur](https://tabosmp.hosterfy.eu)
-Java Version : java 17
+
+Java Version : java 21
+
 e-mail : email@tabosmp.fr
