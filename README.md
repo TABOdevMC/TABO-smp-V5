@@ -7,3 +7,5 @@ Loader : Forge
 [IP du serveur](tabosmp.hosterfy.eu)
 Java Version : java 17
 e-mail : email@tabosmp.fr
+
+Mettez plugins dans user/.mcreator et mettez le reste dans user/McreatorWorkspace
